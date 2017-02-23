@@ -3,8 +3,7 @@ var express = require('express'),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server, { log: false }),
     path = require('path'),
-    proxy = require('express-http-proxy')
-    ;
+    proxy = require('express-http-proxy');
 
 server.listen(process.env.PORT || 4000);
 

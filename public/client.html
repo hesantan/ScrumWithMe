@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" ng-app="ScrumWithMe" ng-controller="ClientCtrl">
     <head>
-        <!--<script src="https://getfirebug.com/firebug-lite.js#debug=true"></script>-->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title ng-bind="appName"></title>
@@ -18,6 +17,7 @@
             * {
                 -webkit-appearance: none;
                 -webkit-border-radius: 0;
+                border-radius: 0;
             }
 
             button {
@@ -149,12 +149,12 @@
 
             <div ng-switch="model.roomType">
                 <div ng-switch-when="planning_poker">
-                    <span ng-repeat="value in [1,2,3,5,8,13,20,40,100,'∞']">
+                    <span ng-repeat="value in [1,2,3,5,8,13,20,40,100]">
                         <button class="planning_poker-button" ng-click="vote(value)" ng-class="{selected: model.vote == value}">{{value}}</button>
                     </span>
                 </div>
 				<div ng-switch-when="modified_fibbonacci">
-                    <span ng-repeat="value in [0,1/2,1,2,3,5,8,13,20,40,100]">
+                    <span ng-repeat="value in [0,'1/2',1,2,3,5,8,13,20,40,100,'∞']">
                         <button class="modified_fibbonacci-button" ng-click="vote(value)" ng-class="{selected: model.vote == value}">{{value}}</button>
                     </span>
                 </div>

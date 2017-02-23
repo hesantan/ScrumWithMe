@@ -27,6 +27,7 @@
             * {
                 -webkit-appearance: none;
                 -webkit-border-radius: 0;
+                border-radius: 0;
             }
 
             .button_area {
@@ -148,12 +149,12 @@
                 }
 
                 .button_area {
-                    zwidth: 100%;
+                    width: 100%;
                     height: 120px;
                     margin: 20px;
                     margin-left: auto;
                     margin-right: auto;
-                    zpadding: 0;
+                    padding: 0;
                     position: inherit;
                 }
 
@@ -162,14 +163,14 @@
                     color: white;
                     text-align: left;
                     font-size: 1.3em;
-                    zborder: 1px solid red;
+                    border: 1px solid red;
                     padding-bottom: 20px;
                 }
 
                 .button-container {
-                    zheight: 240px;
+                    height: 240px;
                     float: none;
-                    zborder: 1px solid blue;
+                    border: 1px solid blue;
                 }
 
                 .button_area1 {
@@ -178,8 +179,8 @@
 
                 .button_area2 {
                     border-radius: 20px;
-                    ztop: 220px;
-                    zright: 50px;
+                    top: 220px;
+                    right: 50px;
                 }
 
             }
@@ -189,19 +190,11 @@
     </head>
     <body>
 
-    <!--
-        <div class="header">
-            <div style="margin: 4px; color: #6A7597; right: 0; position: absolute; font-size: 8pt;" ng-bind="appVersion"></div>
-            <h2 style="text-align: center; margin: 4px;"><img src="images/card-fan-small.png" style="vertical-align: middle;" /> scrum<span style="color: #FFEFCC;">with</span>.me</h2>
-        </div>-->
-
-
         <div class="container">
 
             <div class="mini-header">
-                <h2><img src="images/card-fan-small.png" /> scrum<span style="color: #FFEFCC;">with</span>.me</h2>
+                <h2><img src="images/card-fan-small.png" /> Scrum<span style="color: #FFEFCC;">With</span>Me</h2>
             </div>
-
 
             <div class="button-container">
                 <div class="button_area button_area1" ng-click="host()">
@@ -219,7 +212,6 @@
                 </div>
             </div>
 
-
             <div class="text-contianer">
                 <h1 class="shadowed">No hassle<br/> Planning Poker</h1>
                 <p>Just the right set of features for quick <br/> ad-hoc estimation sessions.  </p>
@@ -232,17 +224,13 @@
                 <br/>
             </div>
 
-
-
-
         </div>
 
         <div class="mini-footer">
-            Copyright &copy; 2015 <a href="http://www.nicklargent.com" target="_blank">Nick Largent</a> and modified by <a href="http://www.hectorsantana.com/" target="_blank">Hector Santana</a>  | Source Code on <a href="https://github.com/hesantan/ScrumWithMe" target="_blank">GitHub</a>
-
+            Copyright &copy; 2015 <a href="http://www.nicklargent.com" target="_blank">Nick Largent</a> and modified by <a href="http://www.hectorsantana.com/" target="_blank">Hector Santana</a> | 
+            Source Code on <a href="https://github.com/hesantan/ScrumWithMe" target="_blank">GitHub</a>
         </div>
-
-
+        
         <script src="/socket.io/socket.io.js"></script>
         <script src="dist/js/vendor.min.js"></script>
         <script src="dist/js/app.min.js"></script>

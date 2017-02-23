@@ -5,6 +5,8 @@ public/dist
 build
 *.zip
 **/Thumbs.db
+.vscode
+app/service.js
 
 # Logs
 logs
