@@ -110,6 +110,8 @@ angular.module('ScrumWithMe').controller('ServerCtrl', ['$scope', '$location', '
     var getWinningText = function() {
         if (model.allIn) {
             switch (model.roomType) {
+                case "modified_fibbonacci":
+                    break;
                 case "planning_poker":
                     break;
                 case "tshirt_sizing":
