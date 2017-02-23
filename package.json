@@ -1,0 +1,29 @@
+{
+  "name": "scrumwithme",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app/app.js"
+  },
+  "dependencies": {
+    "express": "4.3.1",
+    "socket.io": "1.*",
+    "express-http-proxy": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-open": "~0.2.3",
+    "matchdep": "~0.3.0",
+    "grunt-nodemon": "~0.3.0",
+    "grunt-concurrent": "~0.5.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-compress": "~0.13.0",
+    "grunt-text-replace": "~0.4.0",
+    "socket.io-client": "^1.4.8"
+  }
+}

@@ -1,0 +1,7 @@
+syntax: glob
+node_modules
+public/dist
+.idea
+build
+*.zip
+**/Thumbs.db
