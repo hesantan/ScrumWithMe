@@ -1,10 +1,29 @@
 {
   "name": "scrumwithme",
   "version": "0.0.2",
+  "author": "Nick Largent <http://www.nicklargent.com/>, Hector Santana <me@hectorsantana.com>",
+  "description": "No hassle Planning Poker application for Node.JS.",
   "private": true,
+  "keywords": [
+    "hassle",
+    "planning",
+    "poker",
+    "app",
+    "scrum",
+    "agile",
+    "sprint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hesantan/ScrumWithMe.git"
+  },
+  "readmeFilename": "README.md",
+  "main": "app/app.js",
   "scripts": {
     "start": "node app/app.js"
   },
+  "license": "Apache-2.0",
+  "engine": "node >= 0.10.10",
   "dependencies": {
     "express": "4.3.1",
     "socket.io": "1.*",

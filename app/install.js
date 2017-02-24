@@ -19,10 +19,17 @@ svc.on('install',function(){
   svc.start();
 });
 
-// Listen for the "uninstall" event so we know when it's done. 
-svc.on('uninstall',function(){
-  console.log('Uninstall complete.');
-  console.log('The service exists: ',svc.exists);
+// Just in case this file is run twice.
+svc.on('alreadyinstalled',function(){
+  console.log('This service is already installed.');
+});
+
+
+
+// Listen for the "start" event and let us know when the
+// process has actually started working.
+svc.on('start',function(){
+  console.log(svc.name+' started!\nVisit http://127.0.0.1:4000 to see it in action.');
 });
 
 svc.install();

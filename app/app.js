@@ -41,7 +41,6 @@ var sessionStats = {
 };
 var sessions = {};
 
-
 io.sockets.on('connection', function (socket) {
 
     console.log(" ================================================");
@@ -229,7 +228,6 @@ io.sockets.on('connection', function (socket) {
  n:60000,
  s:1000
  */
-
 var janitor = function() {
     var d = new Date();
     sessionStats = {
