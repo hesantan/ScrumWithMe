@@ -45,6 +45,6 @@
     "grunt-open": "~0.2.3",
     "grunt-text-replace": "~0.4.0",
     "matchdep": "~2.0.0",
-    "socket.io-client": "^4.6.1"
+    "socket.io-client": "^4.8.1"
   }
 }
